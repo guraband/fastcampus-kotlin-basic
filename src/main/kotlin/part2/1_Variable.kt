@@ -1,5 +1,15 @@
 package part2
 
 fun main() {
-    print("Hello!!!")
+    println("Hello!!!")
+
+    val a: Int
+    val b = 1
+
+    val c: Int
+    c = 123
+
+    println(x + 2)
 }
+
+var x = 5
