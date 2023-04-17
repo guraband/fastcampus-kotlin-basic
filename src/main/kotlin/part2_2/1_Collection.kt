@@ -74,4 +74,25 @@ fun main() {
     currencyList.forEach {
         println(it)
     }
+
+    println("\n- map")
+    val lowerList = listOf("a", "b", "c")
+    val upperList = mutableListOf<String>()
+    for (lowerCase in lowerList) {
+        upperList.add(lowerCase.uppercase())
+    }
+
+    println(upperList)
+    println(lowerList.map { it.uppercase() })
+
+    println("\n- filter")
+    val filteredList = mutableListOf<String>()
+    for (upperCase in upperList) {
+        if (upperCase == "A" || upperCase == "C") {
+            filteredList.add(upperCase)
+        }
+    }
+
+    println(filteredList)
+    println(upperList.filter { it == "A" || it == "C" })
 }
