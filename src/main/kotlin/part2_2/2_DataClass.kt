@@ -21,4 +21,15 @@ fun main() {
     println("\n- toString")
     println(person1.toString())
     println(dataPerson1.toString())
+
+    println("\n- copy")
+    println(dataPerson1)
+    println(dataPerson1.copy(name = "lisa"))
+
+    println("\n- component N")
+    println("이름 : ${dataPerson1.component1()}, 나이 ${dataPerson1.component2()}")
+
+    println("\n- 구조 분해 할당")
+    val (name, age) = dataPerson1
+    println("이름 : ${name}, 나이 ${age}")
 }
