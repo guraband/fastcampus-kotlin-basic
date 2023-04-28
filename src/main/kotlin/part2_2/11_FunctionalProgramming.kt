@@ -12,6 +12,7 @@ fun main() {
     printMessage3("Hi")
 
     println(plus(1, 2))
+    println(plus2(1, 2))
 
     println("")
     println("- 고차함수 예제")
@@ -40,6 +41,7 @@ val printMessage2: (String) -> Unit = { message -> println(message) }
 val printMessage3: (String) -> Unit = { println(it) }
 
 val plus: (Int, Int) -> Int = { a, b -> a + b }
+val plus2 = { x: Int, y: Int -> x + y }
 
 fun forEachStr(collection: Collection<String>, action: (String) -> Unit) {
     for (item in collection) {
