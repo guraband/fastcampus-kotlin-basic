@@ -1,4 +1,4 @@
-package kotlinjava.gettersetter;
+package kotlinjava.getterSetter;
 
 import java.util.UUID;
 
