@@ -1,15 +1,15 @@
 package signiturepackage.course5.ch01
 
 fun main() {
-    val users = mutableListOf<User>()
-    users.add(User("a", 10))
-    users.add(User("b", 20))
-    users.add(User("c", 30))
+    val users = mutableListOf<TempUser>()
+    users.add(TempUser("a", 10))
+    users.add(TempUser("b", 20))
+    users.add(TempUser("c", 30))
 
-    val users2 = listOf<User>(
-        User("d", 30),
-        User("e", 31),
-        User("f", 32),
+    val users2 = listOf<TempUser>(
+        TempUser("d", 30),
+        TempUser("e", 31),
+        TempUser("f", 32),
     )
 
     users.forEachIndexed { index, user ->
